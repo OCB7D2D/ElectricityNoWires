@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="ElectricityNoWires" />
+		<Description value="Hide wires when the connection tool is not equipped" />
+		<Website value="https://github.com/OCB7D2D/ElectricityNoWires" />
+		<Author value="https://github.com/OCB7D2D/" />
+		<Version value="0.1" />
+	</ModInfo>
+</xml>
