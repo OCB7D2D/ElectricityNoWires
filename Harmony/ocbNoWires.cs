@@ -9,7 +9,7 @@ public class OcbNoWires
     {
         public void Start()
         {
-            Debug.Log("Loading Patch: " + GetType().ToString());
+            Debug.Log("Loading OCB Electricity No Wires Patch: " + GetType().ToString());
             var harmony = new Harmony(GetType().ToString());
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }
