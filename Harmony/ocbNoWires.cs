@@ -15,10 +15,6 @@ public class OcbNoWires
         }
     }
 
-    public static Color TripWireRelayColor = Color.magenta;
-    public static Color ElectricWireRelayColor = (Color)
-        new Color32((byte)0, (byte)97, byte.MaxValue, byte.MaxValue);
-
     [HarmonyPatch(typeof(FastWireNode))]
     [HarmonyPatch("TogglePulse")]
     public class FastWireNode_TogglePulse
@@ -37,8 +33,8 @@ public class OcbNoWires
             // via start and end position for power dictionary). But
             // we can also just check for (hard-coded) pulse color.
             ___meshRenderer.enabled = WireManager.Instance.ShowPulse ||
-                                      ___pulseColor == TripWireRelayColor ||
-                                      ___pulseColor == ElectricWireRelayColor;
+                                      ___pulseColor != Color.yellow &&
+                                      ___pulseColor != Color.gray;
 
             return false;
         }
