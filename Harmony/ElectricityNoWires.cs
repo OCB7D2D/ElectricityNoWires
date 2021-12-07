@@ -1,18 +1,16 @@
-using DMT;
 using HarmonyLib;
 using UnityEngine;
 using System.Reflection;
+using System.Collections;
 
-public class OcbNoWires
+public class ElectricityNoWires : IModApi
 {
-    public class OcbNoWires_Init : IHarmony
+
+    public void InitMod(Mod mod)
     {
-        public void Start()
-        {
-            Debug.Log("Loading OCB Electricity No Wires Patch: " + GetType().ToString());
-            var harmony = new Harmony(GetType().ToString());
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
-        }
+        Log.Out(" Loading Patch: " + this.GetType().ToString());
+        var harmony = new HarmonyLib.Harmony(GetType().ToString());
+        harmony.PatchAll(Assembly.GetExecutingAssembly());
     }
 
     [HarmonyPatch(typeof(FastWireNode))]
