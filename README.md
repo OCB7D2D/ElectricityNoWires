@@ -1,4 +1,4 @@
-# OCB Electricity No Wire DMT Mod - 7 Days to Die Addon
+# OCB Electricity No Wire Mod - 7 Days to Die (A20) Addon
 
 This mod will remove all visible wires when the wiring tool is not equipped,
 except for trip wires and wires between fence posts. Doesn't have any additional
