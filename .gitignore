@@ -1,1 +1,3 @@
-/ElectricityNoWires.pdb
+/build
+/.vs
+*.pdb
