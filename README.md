@@ -9,6 +9,6 @@ dependencies since A20, but was developed with [A20BepInExPreloader][1]
 
 ## Compatibility
 
-I've developed and tested this Mod against version a20.b218.
+I've developed and tested this Mod against version a20.6(b9).
 
 [1]: https://github.com/OCB7D2D/A20BepInExPreloader
